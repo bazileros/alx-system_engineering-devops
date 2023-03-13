@@ -1,6 +1,8 @@
 #!/bin/bash
 chmod u+x *
+chmod u-x README.md
 git status
 git add .
 git commit -m 'Shell redirections'
 git push
+ls
