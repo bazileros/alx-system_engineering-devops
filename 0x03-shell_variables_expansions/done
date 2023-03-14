@@ -6,4 +6,5 @@ git status
 git commit -m '0x03-shell_variables_expansions'
 git push
 clear
+git status
 ls
