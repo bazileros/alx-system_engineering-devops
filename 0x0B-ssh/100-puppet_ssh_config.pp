@@ -5,7 +5,7 @@ path => '/etc/ssh/ssh_config',
 line => 'PasswordAuthentication no',
 }
 
-file_line{'Declare identify file':
+file_line{'Declare identity file':
 path => '/etc/ssh/ssh_config',
 line => 'IdentifyFile ~/.ssh/school',
 }
