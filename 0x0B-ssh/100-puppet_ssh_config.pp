@@ -1,12 +1,12 @@
-#configure ssh configure
+#configure ssh config
 
-file_line {'Disable password login':
-path => '/etc/ssh/ssh_config',
-line => 'PasswordAuthentication no',
+file_line{'Turn off passwd auth':
+  path => '/etc/ssh/ssh_config',
+  line => 'PasswordAuthentication no'
 }
 
-file_line {'Declare identity file':
-ensure => 'present',
-path => '/etc/ssh/ssh_config',
-line => 'IdentifyFile ~/.ssh/school',
+file_line{'Declare identity file':
+  path => '/etc/ssh/ssh_config',
+  line => 'IdentityFile ~/.ssh/school'
 }
+
